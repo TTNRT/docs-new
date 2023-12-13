@@ -1,0 +1,39 @@
+site_name: TTNRT Docs
+repo_url: https://github.com/TTNRT/docs-new
+repo_name: TTNRT/docs-new
+copyright: Copyright &copy; TTNRT 2020 - 2023
+theme:
+  name: material
+  logo: https://cdn.ttnrtsite.me/images/logo.png
+  favicon: https://cdn.ttnrtsite.me/images/logo.png
+  palette: 
+    - scheme: default
+      toggle:
+        icon: material/brightness-7 
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  features:
+    - content.code.copy
+    - content.code.select
+extra:
+  generator: false
+  version:
+    provider: mike
+
+markdown_extensions:
+  - tables
+  - attr_list
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - toc:
+      permalink: "#"
+  
